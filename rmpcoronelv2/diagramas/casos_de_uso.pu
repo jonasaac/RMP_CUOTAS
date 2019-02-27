@@ -1,0 +1,41 @@
+@startuml
+
+left to right direction
+
+'''''''''''
+' Actores '
+'''''''''''
+:Usuario Control\nde Cuotas: as UCC
+:Usuario RMP: as URMP
+:Sistema RMP: as SRMP
+
+''''''''''''''''
+' Casos de Uso '
+''''''''''''''''
+usecase (Listar Documentos de Descarga) as LDD
+
+rectangle "Control de Cuotas" {
+usecase (Registrar Cambios en estado\nde Cuotas Globales) as RCCG
+usecase (Registrar Resoluciones de Derecho) as RRD
+usecase (Registrar Resoluciones de Cuota) as RRC
+usecase (Registrar Operación sobre\nResoluciones de Cuotas) as ROP
+usecase (Asociar Documento de Descarga a Resolución) as ADDR
+usecase (Listar Resoluciones Disponibles) as LRES
+usecase (Cambiar disponibilidad de Resoluciones) as CDISP
+}
+
+LRES ..> ADDR : "<incluye>"
+LDD ..> ADDR : "<incluye>"
+
+CDISP <. LRES : "<incluye>"
+
+UCC -- RCCG
+UCC -- RRD
+UCC -- RRC
+UCC -- ROP
+UCC -- CDISP
+
+ADDR -- URMP
+
+LDD -l- SRMP
+@enduml

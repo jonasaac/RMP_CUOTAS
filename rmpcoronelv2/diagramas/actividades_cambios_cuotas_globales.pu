@@ -1,0 +1,55 @@
+@startuml
+
+|Usuario|
+start
+: Ingresa al Sistema ;
+: Ingresa al Modulo de Cuotas ;
+: Selecciona Opción Registrar
+Cambios de Cuotas Globales ;
+|Sistema|
+: Se despliega formulario
+de registro ;
+|Usuario|
+repeat
+split
+: Usuario Cancela el Formulario ;
+stop
+split again
+partition "Ingreso Datos" {
+  : Selecciona la especie objetivo <
+  : Selecciona la macro zona objetivo <
+  : Ingresa la fecha que se declara el
+  estado de la cuota <
+  : Se ingresa la cantidad de toneladas
+  asociadas al estado de la cuota <
+}
+endsplit
+|Sistema|
+: Verifica validez de los datos ;
+repeat while (Los datos sean han\nvalidamente ingresados)
+: Permite enviar formulario
+para su guardado ;
+|Usuario|
+split
+: Usuario Cancela el Formulario ;
+stop
+split again
+: Envia petición de
+Guardado de datos ;
+endsplit
+|Sistema|
+: Verifica validez desde
+el lado del servidor ;
+if (Datos Validos) then (No)
+: Se envia mensaje indicando
+errores en el formulario >
+|Usuario|
+: Corrige Errores Reportados;
+stop
+else (Si)
+|Sistema|
+: Los datos son guardados
+en la base de datos ;
+: Se envia mensaje de confirmación >
+stop
+@enduml

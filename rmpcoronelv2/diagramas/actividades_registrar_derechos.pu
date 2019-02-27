@@ -1,0 +1,71 @@
+@startuml
+
+|Usuario|
+start
+: Ingresa al Sistema ;
+: Ingresa al Modulo de Cuotas ;
+: Selecciona Opción Nueva
+Resolucion de Derecho ;
+|Sistema|
+: Se despliega formulario
+de ingreso ;
+|Usuario|
+repeat
+split
+: Usuario Cancela el Formulario ;
+stop
+split again
+partition "Ingreso Datos" {
+  : Selecciona el tipo de Resolución a Ingresar ;
+  |Sistema|
+  : Bloquea opciones que no
+  pertenecen al tipo de Resolución ;
+  |Usuario|
+  : Ingresa el Codigo de Resolución <
+  : Ingresa fecha de Promulgación
+  de Resolución <
+  : Selecciona Periodo de Vigencia
+  de la Resolución <
+  : Selecciona la especie asociada
+  a la Resolución <
+  : Ingresa la Macro Zona asociada
+  a la resolución <
+  : Ingresa la porción de la cuota
+  que es asignada en el documento
+  (Se debe ajustar la forma según
+    tipo de resolución) <
+  : Ingresa la porcion asignada
+  a cada Nave <
+  : Selecciona Copia digital
+  de Documento Oficial <
+}
+endsplit
+|Sistema|
+: Verifica validez de los datos ;
+repeat while (Los datos sean han\nvalidamente ingresados)
+: Permite enviar formulario
+para su guardado ;
+|Usuario|
+split
+: Usuario Cancela el Formulario ;
+stop
+split again
+: Envia petición de
+Guardado de datos ;
+endsplit
+|Sistema|
+: Verifica validez desde
+el lado del servidor ;
+if (Datos Validos) then (No)
+: Se envia mensaje indicando
+errores en el formulario >
+|Usuario|
+: Corrige Errores Reportados;
+stop
+else (Si)
+|Sistema|
+: Los datos son guardados
+en la base de datos ;
+: Se envia mensaje de confirmación >
+stop
+@enduml

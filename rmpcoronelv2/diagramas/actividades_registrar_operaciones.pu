@@ -1,0 +1,53 @@
+@startuml
+
+|Usuario|
+start
+: Ingresa al Sistema ;
+: Ingresa al Modulo de Cuotas ;
+: Selecciona Opción Registrar
+Operaciones Sobre Cuotas ;
+|Sistema|
+: Se despliega formulario
+de registro ;
+|Usuario|
+repeat
+split
+: Usuario Cancela el Formulario ;
+stop
+split again
+partition "Ingreso Datos" {
+  : Selecciona el tipo de operación que se va a Registrar <
+  : Selecciona la Resolución de Origen <
+  : Selecciona la Resolución de Destino <
+  : Ingresa la cantidad asociada a la operación <
+}
+endsplit
+|Sistema|
+: Verifica validez de los datos ;
+repeat while (Los datos sean han\nvalidamente ingresados)
+: Permite enviar formulario
+para su guardado ;
+|Usuario|
+split
+: Usuario Cancela el Formulario ;
+stop
+split again
+: Envia petición de
+Guardado de datos ;
+endsplit
+|Sistema|
+: Verifica validez desde
+el lado del servidor ;
+if (Datos Validos) then (No)
+: Se envia mensaje indicando
+errores en el formulario >
+|Usuario|
+: Corrige Errores Reportados;
+stop
+else (Si)
+|Sistema|
+: Los datos son guardados
+en la base de datos ;
+: Se envia mensaje de confirmación >
+stop
+@enduml

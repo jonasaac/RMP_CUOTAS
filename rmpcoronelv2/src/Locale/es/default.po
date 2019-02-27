@@ -1,0 +1,50 @@
+msgid "Account Login"
+msgstr "Entrar"
+
+msgid "Username"
+msgstr "Nombre de Usuario"
+
+msgid "Auxiliars"
+msgstr "Auxiliares"
+
+msgid "Functions"
+msgstr "Funciones"
+
+msgid "Password"
+msgstr "Contraseña"
+
+msgid "Login"
+msgstr "Entrar"
+
+msgid "Log out"
+msgstr "Salir"
+
+msgid "Submit"
+msgstr "Enviar"
+
+msgid "Home"
+msgstr "Inicio"
+
+msgid "Delete"
+msgstr "Borrar"
+
+msgid "View"
+msgstr "Ver"
+
+msgid "Edit"
+msgstr "Editar"
+
+msgid "Actions"
+msgstr "Acciones"
+
+msgid "index {0}"
+msgstr "Ver {0}"
+
+msgid "add {0}"
+msgstr "Registrar {0}"
+
+msgid "Edit {0}"
+msgstr "Editar {0}"
+
+msgid "View inactive {0}"
+msgstr "Ver {0} inactivos"

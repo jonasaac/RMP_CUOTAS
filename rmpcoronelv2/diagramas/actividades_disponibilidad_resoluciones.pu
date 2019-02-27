@@ -1,0 +1,37 @@
+@startuml
+
+start
+: Ingresa al Sistema ;
+: Ingresa al Modulo de Cuotas ;
+: Selecciona Opción para mostar
+disponibilidad de resoluciones ;
+: Se despliega dos listas: las
+resoluciones activas e inactivas ]
+split
+: Usuario selecciona una resolucion
+activa <
+split
+: Usuario selecciona opción para
+cambiar de estado a inactiva <
+: Muestra mensaje de Exito ]
+split again
+: Usuario selecciona opción para
+cambiar de estado a activa <
+: Muestra mensaje de Error ]
+endsplit
+stop
+split again
+: Usuario selecciona una resolución
+inactiva <
+split
+: Usuario selecciona opción para
+cambiar de estado a inactiva <
+: Muestra mensaje de Error ]
+split again
+: Usuario selecciona opción para
+cambiar de estado a activa <
+: Muestra mensaje de Exito ]
+endsplit
+stop
+endsplit
+@enduml
