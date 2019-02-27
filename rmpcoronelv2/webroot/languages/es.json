@@ -1,0 +1,104 @@
+{
+  "rmp": {
+    "mareas": {
+      "mareas": {
+        "newSuccess":   "¡Nueva <b>Marea</b> registrada con exito!",
+        "editSuccess":  "¡<b>Marea</b> editada con exito!",
+        "newError":     "No se puede registrar la nueva <b>Marea</b>, existen errores en el formulario.",
+        "editError":    "No se pueden guardar los cambios en la <b>Marea</b>, existen errores en el formulario.",
+        "closeNew":     "¿Está seguro de descartar este nuevo registro?",
+        "closeEdit":     "¿Está seguro de descartar este nuevo registro?"
+      },
+      "recaladas": {
+        "newSuccess":   "¡Nueva <b>Recalada</b> registrada con exito!",
+        "editSuccess":  "¡<b>Recalada</b> editada con exito!",
+        "newError":     "No se puede registrar la nueva <b>Recalada</b>, existen errores en el formulario.",
+        "editError":    "No se pueden guardar los cambios en la <b>Recalada</b>, existen errores en el formulario.",
+        "closeNew":     "¿Está seguro de descartar este nuevo registro?",
+        "closeEdit":     "¿Está seguro de descartar este nuevo registro?"
+      },
+      "descargas": {
+        "newSuccess":   "¡Nuevo <b>Documento de Descarga</b> registrado con exito!",
+        "editSuccess":  "¡<b>Documento de Descarga</b> editada con exito!",
+        "newError":     "No se puede registrar la nueva <b>Documento de Descarga</b>, existen errores en el formulario.",
+        "editError":    "No se pueden guardar los cambios en la <b>Documento de Descarga</b>, existen errores en el formulario.",
+        "closeNew":     "¿Está seguro de descartar este nuevo registro?",
+        "closeEdit":     "¿Está seguro de descartar este nuevo registro?"
+      }
+    },
+    "guias": {
+      "encabezado": {
+        "newSuccess":   "¡Nueva <b>Guia</b> registrada con exito!",
+        "editSuccess":  "¡<b>Guia</b> editada con exito!",
+        "newError":     "No se puede registrar la nueva <b>Guia</b>, existen errores en el formulario.",
+        "editError":    "No se pueden guardar los cambios en la <b>Guia</b>, existen errores en el formulario.",
+        "closeNew":     "¿Está seguro de descartar este nuevo registro?",
+        "closeEdit":     "¿Está seguro de descartar este nuevo registro?"
+      },
+      "detalles": {
+        "newSuccess":   "¡Se han agregado con exito los detalles a la <b>Guia</b>!",
+        "editSuccess":  "¡<b>Guia</b> editada con exito!",
+        "newError":     "No se puede registrar estos detalles para la <b>Guia</b>, existen errores en el formulario.",
+        "editError":    "No se pueden guardar los cambios en la <b>Guia</b>, existen errores en el formulario.",
+        "closeNew":     "¿Está seguro de descartar este nuevo registro?",
+        "closeEdit":     "¿Está seguro de descartar este nuevo registro?",
+        "emptySave":    "No se pueden guardar los cambios sin ingresar detalles."
+      }
+    }
+  },
+  "produccion": {
+    "folios": {
+      "encabezado": {
+        "newSuccess":   "¡Nuevo <b>Folio</b> registrado con exito!",
+        "editSuccess":  "¡<b>Folio</b> editado con exito!",
+        "newError":     "No se puede registrar el nuevo <b>Folio</b>, existen errores en el formulario.",
+        "editError":    "No se pueden guardar los cambios en el <b>Folio</b>, existen errores en el formulario.",
+        "closeNew":     "¿Está seguro de descartar este nuevo registro?",
+        "closeEdit":     "¿Está seguro de descartar este nuevo registro?"
+      },
+      "detalles": {
+        "newSuccess":   "¡Se han agregado con exito los detalles al <b>Folio</b>!",
+        "editSuccess":  "¡<b>Folio</b> editado con exito!",
+        "newError":     "No se puede registrar estos detalles para el <b>Folio</b>, existen errores en el formulario.",
+        "editError":    "No se pueden guardar los cambios en el <b>Folio</b>, existen errores en el formulario.",
+        "closeNew":     "¿Está seguro de descartar este nuevo registro?",
+        "closeEdit":     "¿Está seguro de descartar este nuevo registro?",
+        "emptySave":    "No se pueden guardar los cambios sin ingresar detalles."
+      }
+    },
+    "lotes": {
+      "newSuccess":   "¡Nuevo <b>Lote</b> registrado con exito!",
+      "editSuccess":  "¡<b>Lote</b> editado con exito!",
+      "newError":     "No se puede registrar el nuevo <b>Lote</b>, existen errores en el formulario.",
+      "editError":    "No se pueden guardar los cambios en el <b>Lote</b>, existen errores en el formulario.",
+      "closeNew":     "¿Está seguro de descartar este nuevo registro?",
+      "closeEdit":     "¿Está seguro de descartar este nuevo registro?"
+    }
+  },
+  "calidad": {},
+  "administracion": {
+    "naves": {},
+    "auxiliares": {},
+    "ciudades": {},
+    "plantas": {},
+    "usuarios": {}
+  },
+  "cuotas": {
+    "resder": {
+      "newSuccess":   "¡Nuevo <b>Folio</b> registrado con exito!",
+      "editSuccess":  "¡<b>Folio</b> editado con exito!",
+      "newError":     "No se puede registrar el nuevo <b>Folio</b>, existen errores en el formulario.",
+      "editError":    "No se pueden guardar los cambios en el <b>Folio</b>, existen errores en el formulario.",
+      "closeNew":     "¿Está seguro de descartar este nuevo registro?",
+      "closeEdit":     "¿Está seguro de descartar este nuevo registro?"
+    },
+    "rescuota": {
+      "newSuccess":   "¡Nuevo <b>Lote</b> registrado con exito!",
+      "editSuccess":  "¡<b>Lote</b> editado con exito!",
+      "newError":     "No se puede registrar el nuevo <b>Lote</b>, existen errores en el formulario.",
+      "editError":    "No se pueden guardar los cambios en el <b>Lote</b>, existen errores en el formulario.",
+      "closeNew":     "¿Está seguro de descartar este nuevo registro?",
+      "closeEdit":     "¿Está seguro de descartar este nuevo registro?"
+    }
+  }
+}

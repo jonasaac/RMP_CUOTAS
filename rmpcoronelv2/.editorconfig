@@ -1,0 +1,11 @@
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+
+[*.{php, js}]
+index_size = 4
+
+[*.{ctp, html}]
+index_size = 2

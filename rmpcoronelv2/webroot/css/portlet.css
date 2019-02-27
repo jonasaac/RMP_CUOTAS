@@ -1,0 +1,1989 @@
+/**************************************************************************
+ * Copyright (c) 2002, 2008 ComActivity AB, Sweden.  All rights reserved.
+ * COMACTIVITY PROPRIETARY/CONFIDENTIAL.  Use is subject to license terms.
+ * Redistribution in source and binary forms, with or without modification,
+ * are not permitted unless explicit written permission is obtained.
+ **************************************************************************/
+
+.CustomClass_redLabel {
+	color:						red;
+}
+
+ /*---------------------------------------------------------------------------
+	Portlet
+	---------------------------------------------------------------------*/
+.CA-portletContent{
+	width:						100%;
+	height:						100%;
+	overflow-X:					auto;
+	overflow-Y:					hidden;
+	padding-bottom:				10px;
+	/*position:					relative;*/
+}
+
+.CA-toolbar{
+}
+
+.CA-toolbarIcon{
+	cursor:						pointer;
+	margin:						2px;
+}
+
+.CA-portletMenuIcon{
+	float:						left;
+	margin:						2px;
+	width:						16px;
+	height:						16px;
+}
+
+div.dynamicWaitIcon {
+	background-image:			url('../images/indicator.gif');
+	width:						15px;
+	height:						15px;
+}
+
+.portletframe {
+}
+
+
+
+/* ------------------------------------------------------------------
+	New navigator menu
+   ------------------------------------------------------------------  */
+.CA-navMenuContainer{
+	position:					absolute;
+	background-color:			#f5f5f5;
+	border:						1px solid #bbbbbb;
+	text-align:					left;
+	padding:					2px;
+	z-index:					2000;
+}
+
+.CA-navMenuGroup{
+	cursor:						pointer;
+	padding:					2px;
+	font-weight:				bold;
+}
+
+.CA-navMenuGroupHoover{
+	background-color:			blue;
+}
+
+.CA-navMenuItem{
+	cursor:						pointer;
+	padding:					2px;
+}
+
+.CA-navMenuItemHoover{
+	background-color:			blue;
+}
+
+.CA-navMenuArrow{
+	background-image:			url('Glacier/images/icons/navigatorArrClosed.png');
+	height:						12px;
+	width:						12px;
+	background-repeat:			no-repeat;
+	background-position:		center;
+}
+
+.CA-navMenuSeparator{
+ 	height:						1px;
+ 	width:						100%;
+ 	background-color:			#bbbbbb;
+}
+
+
+
+/*---------------------------------------------------------------------------
+	Paging
+	---------------------------------------------------------------------*/
+.CA-pagingButtonContainer{
+	margin-top:					3px;
+	margin-bottom:				3px;
+	margin-right:				5px;
+	float:						left;
+	width:						100%;
+}
+
+.CA-pagingButton {
+}
+
+.pagingText {
+	cursor:						default;
+}
+
+.pagingCurrentPage {
+	padding-left:				3px;
+}
+
+.pagingTotalPages {
+	padding-left:				2px;
+}
+
+.pagingTotalRecords {
+	padding-left:				8px;
+}
+
+/* ------------------------------------------------------------------
+	AutoCompletion, AjaxPopup.js.
+   ------------------------------------------------------------------  */
+
+.ajaxpopup {
+	border:						0.5px solid #CCC;
+}
+
+.combopopup {
+	border:						0.5px solid #000;
+}
+
+.combopopupline {
+	font-size:					10px;
+}
+
+/* ------------------------------------------------------------------
+	Tab area, customized portlets
+   ------------------------------------------------------------------  */
+.CA-custTabScrollDiv{
+	z-index:					1;
+	width:						100%;
+	overflow-x:					hidden;
+}
+
+.CA-custTabItem{
+	cursor:						pointer;
+	float:						left;
+}
+
+.CA-custTabItemSelected{
+	cursor:						default;
+	position:					relative;
+	top:						1px;
+}
+
+
+
+/* ------------------------------------------------------------------
+	Tab area, segment
+   ------------------------------------------------------------------  */
+.CA-tabPaneContainer{
+	width:						100%;
+	table-layout:				fixed;
+}
+
+.CA-tabContainer{
+	overflow:					hidden;
+	text-align:					left;
+	height:						20px;
+}
+
+.CA-tabPane{
+}
+
+.CA-tabPaneCell{
+	vertical-align:				bottom;
+}
+
+.CA-tabItem{
+	cursor:						pointer;
+	float:						left;
+}
+
+.CA-tabItemMid{
+	white-space:				nowrap;
+}
+
+.CA-tabItemSelected{
+	cursor:						default;
+}
+
+.CA-tabForcer{
+	width:						3px;
+	overflow-x:					hidden;
+	visibility:					hidden;
+}
+
+.CA-tabBorder{
+	padding:					3px;
+	padding-bottom:				0px;
+	margin-bottom:				2px;
+}
+
+.CA-tabScroll{
+	cursor:						pointer;
+	width:						100%;
+}
+
+
+
+
+/* ------------------------------------------------------------------
+	Segment container
+   ------------------------------------------------------------------  */
+.CA-customTabBorder{
+	width:						100%;
+	padding:					4px;
+	border:						1px solid #cccccc;
+}
+
+
+
+/* ------------------------------------------------------------------
+	Segment
+   ------------------------------------------------------------------  */
+.CA-segmentContainer{
+	width:						100%;
+}
+
+.CA-segmentHeaderContainer{
+	width:						100%;
+}
+
+.CA-segmentHeader{
+	width:						100%;
+	height:						15px;
+	cursor:						pointer;
+   -moz-user-select: 			none;
+   -khtml-user-select: 			none;
+   user-select: 				none;
+}
+
+.CA-segmentHeaderLeft{
+	height:						15px;
+	width:						16px;
+	padding-left:				3px;
+}
+
+.CA-segmentButton{
+	width:						11px;
+	height:						11px;
+	font-size:					8px;
+	cursor:						pointer;
+}
+
+.CA-segmentButtonFocusImage {
+	width:						12px;
+	height:						12px;
+	cursor:						pointer;
+}
+
+.CA-segmentButtonHide{
+	background-image:			url('images/icons/segment_hide.gif');
+	background-repeat:			no-repeat;
+}
+
+.CA-segmentButtonShow{
+	background-image:			url('images/icons/segment_show.gif');
+	background-repeat:			no-repeat;
+}
+
+.CA-segmentHeaderTitle{
+	font-size:					11px;
+}
+
+.CA-segmentHeaderMsg {
+	font-size:					10px;
+	padding-right:				10px;
+	text-align:					right;
+}
+
+.CA-segment{
+	padding:					3px;
+	width:						100%;
+}
+
+.CA-browseMsg{
+	font-weight:				bold;
+}
+
+
+
+.CA-removeMsgBtn{
+	height:						10px;
+	width:						15px;
+	background-image:			url('../images/close.gif');
+	cursor:						pointer;
+}
+
+/* ------------------------------------------------------------------
+	Detail area
+   ------------------------------------------------------------------  */
+.CA-dtCell {
+	white-space: 				nowrap;
+}
+
+.CA-dtCellLbl {
+}
+
+.CA-dtCellFld {
+}
+
+.CA-dtLblRight {
+	margin-left:				3px;
+}
+
+.FrameBorderLegend {
+	cursor:						default;
+	margin-bottom:				2px;
+	height:						15px;
+	padding-right:				5px;
+	padding-left:				5px;
+}
+
+.FrameBorderLegendNoText {
+	cursor:						default;
+	border-style:				none none solid;
+	border-width:				0 0 1px;
+	color:						#AAB3B3;
+	margin-bottom:				7.5px;
+	height:						7.5px;
+}
+
+.DetailArea {
+}
+
+.detailButtonArea{
+	margin-top:					3px;
+}
+
+.detail_label{
+	margin-right:				1px;
+	margin-bottom:				1px;
+	margin-right:				3px;
+	cursor:						default;
+}
+
+.Label {
+	white-space:				nowrap;
+	margin-right:				1px;
+	margin-bottom:				1px;
+}
+
+.LabelTopPosition {
+   	white-space: 				nowrap;
+	margin-top:					1px;
+	margin-right:				5px;
+	cursor:						default;
+}
+
+.CA-lblHelp {
+	cursor:						help;
+}
+
+.Caption {
+	white-space:				nowrap;
+	margin:						3pt;
+}
+
+.Text {
+	white-space:				nowrap;
+	margin:						0px;
+	padding:					2px;
+	border:						0px;
+}
+
+.TextError {
+	white-space:				nowrap;
+	margin:						0px;
+	padding:					2px;
+	border:						0px;
+}
+
+.ColumnText {
+	text-align:					left;
+	white-space:				nowrap;
+	margin:						0px;
+	padding:					0px;
+}
+
+.FieldHelp {
+	margin:						0px;
+	padding:					0px;
+	cursor:						pointer;
+	border:						1pt solid white;
+	text-align:					left;
+}
+
+.FieldPrompt {
+	margin:						0px;
+	padding:					0px;
+	cursor:						pointer;
+	border-bottom:				1pt solid white;
+	border-left:				1pt solid white;
+	border-right:				1pt solid white;
+	text-align:					left;
+}
+
+.Border {
+	padding:					3px;
+}
+
+.BorderLegend {
+	color:						#65629D;
+}
+
+.fieldgroupHeader{
+	padding-left:				5px;
+	height:						15px;
+}
+
+.fieldgroupHeaderRight{
+ 	height:						15px;
+ 	width:						11px;
+ }
+
+
+
+/* ------------------------------------------------------------------
+	Input fields
+   ------------------------------------------------------------------  */
+.CA-textBox{
+	border:						1px solid #aaaaaa;
+}
+
+.CA-textBoxBrowse{
+
+}
+
+.CA-textBoxDetail{
+	margin-right:				5px;
+	margin-bottom:				1px;
+}
+
+.CA-textBoxOutput{
+	background-color:			#eeeeee;
+	color:						#444444;
+	overflow-x:					hidden;
+	cursor:						default;
+	padding-left:				1px;
+	padding-right:				1px;
+	white-space:				pre;
+	display:					inline-block;
+
+}
+
+.CA-textBoxBppSearch {
+}
+
+.CA-textBoxFocus{
+	border:						1px solid #000000;
+}
+
+.CA-textArea{
+	border:						1px solid #aaaaaa;
+}
+
+.CA-textAreaDetail{
+	margin-right:				5px;
+	margin-bottom:				1px;
+}
+
+.CA-textAreaOutput{
+	color:						#444444;
+	background-color:			#eeeeee;
+}
+
+.CA-checkBox{
+	width:						10px;
+	height:						10px;
+}
+
+.CA-checkBoxDetail{
+	margin-right:				5px;
+	margin-bottom:				1px;
+}
+
+.CA-comboBox{
+}
+
+.CA-comboBoxDetail{
+	margin-right:				5px;
+	margin-bottom:				1px;
+}
+
+.CA-radioButtonGroup{
+}
+
+.CA-radioButtonGroupDetail{
+	margin-right:				5px;
+	margin-right:				1px;
+}
+
+.CA-radioButton{
+}
+
+.CA-radioButtonLbl {
+	vertical-align:				middle;
+}
+
+.CA-inputDisabled{
+	background-color:			#eeeeee;
+}
+
+.CA-datePickerIcon{
+	border:						none;
+	cursor:						hand;
+	height:						16px;
+	width:						13px;
+	background:					url('images/icons/datePicker.png');
+	background-repeat:			no-repeat;
+	vertical-align:				middle;
+	margin-left:				3px;
+}
+
+.CA-dateTimePickerIcon{
+	border:						none;
+	cursor:						hand;
+	height:						16px;
+	width:						16px;
+	background:					url('images/icons/dateTimePicker.png');
+	background-repeat:			no-repeat;
+	vertical-align:				middle;
+	margin-left:				3px;
+}
+
+.CA-timePickerIcon{
+	border:						none;
+	cursor:						hand;
+	height:						16px;
+	width:						13px;
+	background:					url('images/icons/timePicker.png');
+	background-repeat:			no-repeat;
+	vertical-align:				middle;
+	margin-left:				3px;
+}
+
+.CA-datePickerIconDetail{
+}
+
+.CA-colorPickerIcon{
+	cursor:						hand;
+	height:						16px;
+	width:						16px;
+	border:						1px solid #444444;
+	vertical-align:				bottom;
+	margin-left:				3px;
+}
+
+.CA-colorPickerIconOutput{
+}
+
+.CA-colorPickerIconDetail{
+}
+
+.CA-rightFloat{
+	float:						right;
+}
+
+.CA-rightAlign{
+	text-align:					right;
+}
+
+.CA-centerAlign{
+	text-align:					center;
+}
+
+.CA-midVAlign{
+	vertical-align:				middle;
+}
+
+.CA-uppercase{
+	text-transform:				uppercase;
+}
+
+.CA-prompt{
+	border:						1px solid #000000;
+}
+
+.CA-promptButton {
+	background:					url('../images/icons/prompt.gif');
+	background-repeat:			no-repeat;
+	height:						11px;
+	width:						9px;
+	border:						none;
+	cursor:						hand;
+	vertical-align:				middle;
+	margin-left:				3px;
+}
+
+.CA-fcatButton {
+	background:					url('../images/icons/audittrail.gif');
+	background-repeat:			no-repeat;
+	height:						11px;
+	width:						9px;
+	border:						none;
+	cursor:						hand;
+	vertical-align:				middle;
+	margin-left:				3px;
+}
+
+.CA-button{
+	text-align:					center;
+	cursor:						pointer;
+	height:						19px;
+	padding-left:				2px;
+	padding-right:				2px;
+}
+
+.CA-buttonGo{
+	text-align:					center;
+	cursor:						pointer;
+	height:						19px;
+	padding-left:				2px;
+	padding-right:				2px;
+}
+
+.CA-browseRefreshButton{
+	background-color:			#f6f6f3;
+	border:						1px solid #003c74;
+	width:						25px;
+	height:						17px;
+	background-image:			url('images/icons/buttonRefresh.gif');
+	background-position:		center center;
+	background-repeat:			no-repeat;
+}
+
+.CA-browseXlsButton{
+	background-color:			#f6f6f3;
+	border:						1px solid #003c74;
+	width:						25px;
+	height:						17px;
+	background-image:			url('images/icons/buttonXls.gif');
+	background-position:		center center;
+	background-repeat:			no-repeat;
+}
+
+.CA-browseImportButton{
+	background-color:			#f6f6f3;
+	border:						1px solid #003c74;
+	width:						25px;
+	height:						17px;
+	background-image:			url('images/icons/import.png');
+	background-position:		center center;
+	background-repeat:			no-repeat;
+}
+
+.CA-browseImportButtonDisabled{
+	background-color:			#f6f6f3;
+	border:						1px solid #003c74;
+	width:						25px;
+	height:						17px;
+	background-image:			url('images/icons/import_disabled.png');
+	background-position:		center center;
+	background-repeat:			no-repeat;
+}
+
+/* ------------------------------------------------------------------
+	FlexTable
+   ------------------------------------------------------------------  */
+/* Set row height here */
+#pixelcalc {
+	position:					absolute;
+	left:						-1000px;
+}
+
+.CA-flxtblHeadTable{
+	border-collapse:			collapse;
+}
+
+.CA-flxtblDataTable{
+	border-collapse:			collapse;
+}
+
+/* Caption / Header. serverside */
+td.CA-flxtblCaptionCell {
+	cursor:						pointer;
+	text-align:					left;
+	height:						100%;
+	overflow:					hidden;
+}
+
+/* Caption right align ? */
+.CA-flxtblCaptNumeric {
+	text-align:					right;
+}
+
+/* Collapsed Caption / Header. serverside */
+td.CA-flxtblCaptionCell-collapsed {
+	cursor:						pointer;
+	text-align:					left;
+	display:					block;
+}
+
+.CA-flxtblCaptionText {
+	height:						100%;
+	white-space:				nowrap;
+}
+
+.CA-flxtblResizeHandle {
+	width:						10px;
+	height:						10px;
+	position:					relative;
+	left:						1px;
+	z-index:					3;
+	border:						1px solid transparent; /* IE8/Win7? fix. */
+
+}
+
+/* IE6 hack. Transparent is displayed as black, this overrides this behaviour. */
+*html .CA-flxtblResizeHandle {
+	border-color: pink;
+	filter: chroma(color=pink);
+}
+
+.CA-flxtblSearchRow {
+}
+
+.CA-flxtblSearchCell {
+	white-space:				nowrap;
+	overflow:					hidden;
+}
+
+.CA-flxtblSearchCellCont {
+	/*margin:						1px;*/
+	overflow:					hidden;
+	width:						100%;
+}
+
+.CA-flxtblSearchCellContText {
+	/*margin-right:				5px;*/  /* trouble in FF */
+}
+
+.CA-flxtblSearchInput {
+	width:						100%;
+}
+
+.CA-flxtblSearchDate {
+	width:						100%;
+}
+
+.CA-flxtblSearchCombo {
+}
+
+.CA-flxtblInput {
+	width:						100%;
+}
+
+.CA-flxtblSearchDateCont {
+	text-align:					left;
+	white-space:				nowrap;
+	vertical-align:				middle;
+}
+
+.flextable.pagenoarea {
+	white-space: 				nowrap;
+}
+
+.flextable.pageno {
+	color:						blue;
+	cursor:						pointer;
+}
+
+.flextable.pageno.active {
+	color:						red;
+	cursor:						default;
+}
+
+.flextable.pageno.total {
+	color:						black;
+	cursor:						default;
+}
+
+/* FlexTable Data Row */
+.CA-fDtRw{
+}
+
+/* FlexTable Cell */
+.CA-fCll {
+	cursor:						pointer;
+	white-space:				nowrap;
+	overflow:					hidden;
+}
+
+/* FlexTable Cell Container */
+.CA-fCllCnt {
+	margin:						1px;
+	overflow:					hidden;
+	white-space:				pre;
+}
+
+/* FlexTable Cell Container Text */
+.CA-fCllCntTxt {
+	/*padding-right:				5px;*/
+	white-space:				pre;
+}
+
+.CA-flxtblExtractSumRow   {
+	background-color:			#dddddd;
+	color:						black;
+	font-weight: 				bold;
+	text-align:					right;
+}
+
+.flextable.pagesum   {
+	background-color:			#CCCCCC;
+	color:						black;
+	text-align:					right;
+	height:						25px;
+}
+
+.flextable.horisontalscroll {
+    padding-bottom:				4px;
+}
+
+/*-- Following are styling for the flexTable expand row popup --*/
+
+/* Caption / Label expanded record */
+.flextable.caption_expand {
+	padding-right:				0px;
+	text-align:					left;
+	font-family:				arial;
+	font-size: 					7pt;
+	font-weight: 				bold;
+	border-bottom: 				1px dotted #D3D3D3;
+}
+
+/* Cell expanded record */
+.flextable.data_expand {
+	font-family:				arial;
+	font-size: 					7pt;
+	font-weight: 				100;
+	width: 						100%;
+	padding-top:				0px;
+	padding-bottom:				0px;
+	padding-left:				1px;
+	padding-right:				1px;
+	border:						none;
+	border-bottom: 				1px dotted #D3D3D3;
+	margin:						0px;
+}
+
+/* Skin for the expand record popup */
+.flextable.expand_skin {
+	cursor:						default;
+	font-family:				menutext;
+	position:					absolute;
+	text-align:					left;
+	font-size: 					10pt;
+	background-color:			menu;
+	border:						1px solid buttonface;
+	visibility:					hidden;
+	display:					none;
+	border:						2px outset buttonhighlight;
+	z-index:					3; 		/* JB */
+}
+
+/*-- Following are styling for the flexTable expand row popup --*/
+
+/* Caption / Label expanded record */
+.flextable.caption_expand {
+	padding-right:				0px;
+	text-align:					left;
+	font-size: 					7pt;
+	font-weight: 				bold;
+	width: 						100%;
+	border-bottom: 				1px dotted #D3D3D3;
+}
+
+/* Cell expanded record */
+.flextable.data_expand {
+	font-size: 					7pt;
+	font-weight: 				100;
+	width: 						100%;
+	padding-top:				0px;
+	padding-bottom:				0px;
+	padding-left:				1px;
+	padding-right:				1px;
+	border:						none;
+	border-bottom: 				1px dotted #D3D3D3;
+	margin:						0px;
+}
+
+/* Skin for the expand record popup */
+.flextable.expand_skin {
+	cursor:						default;
+	font-family:				menutext;
+	position:					absolute;
+	text-align:					left;
+	font-size: 					10pt;
+	width:						500px;
+	background-color:			menu;
+	border:						1px solid buttonface;
+	visibility:					hidden;
+	display:					none;
+	border:						2px outset buttonhighlight;
+	z-index:					3; 		/* JB */
+}
+
+
+
+/* ------------------------------------------------------------------
+	FlexTable non-table. Use "flxtbl" as prefix if any to new classes.
+   ------------------------------------------------------------------  */
+div.flxtbldataarea {
+	font-size: 					11px;
+	font-weight: 				100;
+	font-style:					normal;
+	cursor:						pointer;
+}
+
+/* Cell. non-table */
+div.flxtblcell {
+	border:						1px solid #cccccc;
+	padding-top:				2px;
+}
+
+/* Row. non-table */
+div.flxtblrow {
+	cursor:						pointer;
+}
+
+/* Caption / Header. non-table */
+div.flxtblheadercell {
+	border:						1px solid #777777;
+	background-color:			#efebde;
+	color:						#000000;
+}
+
+/* Even row. non-table */
+div.evenrow {
+	background-color:			#ffffff;
+}
+
+/* Odd row. non-table */
+div.oddrow {
+	background-color:			#f8f5ed;
+}
+
+/* Column text, Sortlink. non-table */
+span.flxtblcoltext {
+	cursor:						pointer;
+	font-size: 					12px;
+	padding-left:				4px;
+	padding-right:				4px;
+}
+
+
+
+/* ------------------------------------------------------------------
+	GraphPicker
+   ------------------------------------------------------------------  */
+.graphpicker.gp_body {
+	z-index:					9;
+    position:					absolute;
+    border-style:				solid;
+    border-width:				1px;
+    border-color: 				#9D97CE;
+    background-color:     		#D3D3D3;
+}
+
+.graphpicker.gp_header {
+	background-color:			#65629D !important;
+	color:						white;
+	width:						100%;
+	height:						100%;
+	text-align:					left;
+	font-size: 					11pt;
+	font-weight: 				bold;
+}
+
+.graphpicker.gp_label {
+	text-align:					left;
+	font-size: 					11pt;
+	font-weight: 				bold;
+}
+
+.graphpicker.gp_button {
+	text-align:					left;
+	font-size: 					11pt;
+	font-weight: 				bold;
+}
+
+
+
+/* ------------------------------------------------------------------
+	Calender / DatePicker
+   ------------------------------------------------------------------  */
+.CA-calendar {
+	z-index:					999;
+	position:					absolute;
+	visibility:					hidden;
+	border:						none;
+}
+
+.CA-dtpBody{
+    border:						1px solid #aaaaaa;
+    border-collapse: 			collapse;
+}
+
+.CA-dtpHeaderTable{
+	border-collapse: 			collapse;
+	width:						100%;
+}
+
+.CA-dtpFooter{
+	width:						100%;
+	text-align:					center;
+}
+
+.CA-dtpIconClose{
+	cursor:						pointer;
+}
+
+.CA-dtpTimeArea{
+	width:						100%;
+	text-align:					center;
+	padding:					4px;
+}
+
+.CA-dtpButton {
+	cursor:						pointer;
+	vertical-align:				middle;
+	float:						left;
+	padding:					3px;
+	white-space:				nowrap;
+}
+
+.CA-dtpButtonHoover {
+	padding:					2px;
+	border:						1px solid #000000;
+}
+
+.CA-dtpButtonPrefix {
+	font-size:					1px;
+	width:						11px;
+	height:						11px;
+}
+
+.CA-dtpButtonEquals {
+	background-image:			url('images/icons/dtpEquals.gif');
+	background-repeat:			no-repeat;
+}
+
+.CA-dtpButtonMinus {
+	background-image:			url('images/icons/dtpMinus.gif');
+	background-repeat:			no-repeat;
+}
+
+.CA-dtpButtonPlus {
+	background-image:			url('images/icons/dtpPlus.gif');
+	background-repeat:			no-repeat;
+}
+
+.CA-dtpButtonLeft {
+	font-size:					1px;
+	background-image:			url('images/icons/dtpLeft.gif');
+	background-repeat:			no-repeat;
+	width:						11px;
+	height:						11px;
+}
+
+.CA-dtpButtonRight {
+	font-size:					1px;
+	background-image:			url('images/icons/dtpRight.gif');
+	background-repeat:			no-repeat;
+	width:						11px;
+	height:						11px;
+}
+
+.CA-dtpButtonDown {
+	font-size:					1px;
+	background-image:			url('images/icons/dtpDown.gif');
+	background-repeat:			no-repeat;
+	width:						11px;
+	height:						11px;
+}
+
+.CA-dtpButtonUp {
+	font-size:					1px;
+	background-image:			url('images/icons/dtpUp.gif');
+	background-repeat:			no-repeat;
+	width:						11px;
+	height:						11px;
+}
+
+.CA-dtpDropdown{
+	border-top: 				none;
+}
+
+.CA-dtpSpanHeader{
+	margin-right:				2px;
+	float:						left;
+}
+
+.CA-dtpDropdownMonth{
+	width:						82px;
+}
+
+.CA-dtpDropdownYear{
+	width:						60px;
+}
+
+.CA-dtpDropdownLabel {
+	padding:					2px;
+	cursor:						pointer;
+}
+
+.CA-dtpDropdownLabelHover {
+	padding:					1px;
+}
+
+.CA-dtpCalendarPane{
+	width:						100%;
+	padding:					5px;
+}
+
+.CA-dtpCalendarColumnHeaderCell{
+	font-weight:				bold;
+	padding:					3px;
+}
+
+.CA-dtpCalendarCell{
+	padding:					3px;
+}
+
+.CA-dtpCalendarCellSelected{
+	font-weight:				bold;
+	border:						1px solid #aaaaaa;
+	padding:					2px;
+}
+
+.CA-dtpCalendarCellSelectable{
+	cursor:						pointer;
+}
+
+.CA-dtpCalendarColumnWeek{
+	border-right:				1px solid #cccccc;
+}
+
+.CA-dtpCalendarCellHoliday{
+	color:						#cccccc;
+}
+
+.CA-dtpTextBox{
+	margin-left:				2px;
+	margin-right:				1px;
+}
+
+.CA-dtpOkButton{
+	margin-left:				3px;
+}
+
+
+
+/* ------------------------------------------------------------------
+	Color picker
+   ------------------------------------------------------------------  */
+.CA-clpHeader{
+	width:						256px;
+}
+
+.CA-clpButtonClose{
+	cursor:						pointer;
+	margin-right:				5px;
+}
+
+.CA-clpColorWheel{
+   width:					 	256px;
+   z-index:						10000;
+   position:					absolute;
+   cursor:					 	pointer;
+   background-color:			#ffffff;
+   border:						1px solid #aaaaaa;
+}
+
+.CA-clpBody{
+}
+
+.CA-clpHeaderCol{
+	width:						72px;
+	vertical-align:				center;
+	white-space:				nowrap;
+}
+
+.CA-clpColorDisplay{
+	border:						1px solid #aaaaaa;
+	height:						10px;
+	width:						50px;
+	margin:						auto;
+}
+
+
+
+/* ------------------------------------------------------------------
+	Prototype window
+   ------------------------------------------------------------------  */
+.alphacube_n {
+	border-top:					1px solid #cccccc;
+	border-bottom:				1px solid #888888;
+	height:						23px;
+}
+
+.alphacube_nw {
+	border-left:				1px solid #cccccc;
+	border-top:					1px solid #cccccc;
+	border-bottom:				1px solid #888888;
+	height:						23px;
+}
+
+.alphacube_ne {
+	border-top:					1px solid #cccccc;
+	border-bottom:				1px solid #888888;
+	border-right:				1px solid #888888;
+	height:						23px;
+}
+
+.alphacube_title {
+}
+
+.alphacube_close {
+	position:					absolute;
+	top:						2px;
+	right:						4px;
+	z-index:					1000;
+}
+
+.alphacube_minimize {
+	position:					absolute;
+	top:						2px;
+	right:						43px;
+	z-index:					1000;
+}
+
+.alphacube_maximize {
+	position:					absolute;
+	top:						2px;
+	right:						23px;
+	z-index:					1000;
+}
+
+.alphacube_w {
+	background-image:			none;
+	background-color:			#ffffff;
+	border-left:				1px solid #B7BABC;
+}
+
+.alphacube_e {
+	background-image:			none;
+	background-color:			#ffffff;
+	border-right:				1px solid #8A8D8F;
+}
+
+.alphacube_s {
+	background-image:			none;
+	background-color:			#ffffff;
+	border-bottom:				1px solid #8A8D8F;
+}
+
+.alphacube_sw {
+	background-image:			none;
+	background-color:			#ffffff;
+	border-left:				1px solid #B7BABC;
+	border-bottom:				1px solid #8A8D8F;
+}
+
+.alphacube_sizer {
+	background-image:			none;
+	background-color:			#ffffff;
+	border-right:				1px solid #8A8D8F;
+	border-bottom:				1px solid #8A8D8F;
+}
+
+
+
+/* ------------------------------------------------------------------
+	Prompt
+   ------------------------------------------------------------------  */
+.CA-promptTitlebarrow {
+	padding-top:				2px;
+	padding-left:				3px;
+	padding-right:				3px;
+}
+
+.CA-promptTitlebarcell{
+	cursor:						move;
+}
+
+.CA-promptButtonClose{
+	cursor:						pointer;
+}
+
+
+
+/* ------------------------------------------------------------------
+	FCAT
+   ------------------------------------------------------------------  */
+
+.CA-fcatMenu {
+	cursor:						default;
+	position:					absolute;
+	text-align:					left;
+	background-color:			menu;
+	border:						1px solid buttonface;
+	visibility:					hidden;
+	display:					none;
+	border:						2px outset buttonhighlight;
+	z-index:					3;
+}
+
+/* ------------------------------------------------------------------
+	TreeView
+   ------------------------------------------------------------------  */
+.CA-treeContainer{
+	margin-left:				-5px;
+}
+
+.CA-treeNode{
+	margin-left:				10px;
+	padding-top:				2px;
+	padding-bottom:				2px;
+	border-left:				1px solid #dddddd;
+}
+
+.CA-treeColumn{
+	padding-left:				5px;
+	padding-right:				5px;
+	cursor:						default;
+}
+
+.CA-treeColumnLabel{
+	color:						#3f5b77;
+	border-bottom:				1px solid #e5e5e5;
+}
+
+.CA-treeNodeExpanded{
+	height:						9px;
+	width:						9px;
+	background-image:			url('images/icons/-.gif');
+	background-repeat:			no-repeat;
+	cursor: 					pointer;
+}
+
+.CA-treeNodeCollapsed{
+	height:						9px;
+	width:						9px;
+	background-image:			url('images/icons/+.gif');
+	background-repeat:			no-repeat;
+	cursor: 					pointer;
+}
+
+.CA-treeNodeLeaf{
+	height:						10px;
+	width:						10px;
+	background-image:			url('images/icons/bullet_14x14.png');
+	background-repeat:			no-repeat;
+	cursor: 					default;
+}
+
+
+
+/* ------------------------------------------------------------------
+	Help popup
+   ------------------------------------------------------------------  */
+.CA-helpSegment {
+	width:						100%;
+}
+
+
+
+/* ------------------------------------------------------------------
+	Right click menu
+   ------------------------------------------------------------------  */
+.CA-menu {
+	position:					absolute;
+	text-align:					left;
+	width:						200px;
+	min-width:					200px;
+	border:						2px solid black;
+	/*background-color:			menu;*/
+	line-height:				20px;
+	cursor:						default;
+	visibility:					hidden;
+	display:					none;
+	z-index:					3;
+}
+
+.CA-menu2 {
+	cursor:						default;
+	position:					absolute;
+	text-align:					left;
+
+	/*width:						100px;*/
+
+	/*min-width:					120px;*/
+	background-color:			menu;
+	border:						1px solid buttonface;
+	visibility:					hidden;
+	display:					none;
+	border:						2px outset buttonhighlight;
+	z-index:					3;
+}
+
+.CA-menuitem {
+	/*z-index:					3;*/ 		/* JB */
+	/*width:						100%;*/
+	width:						auto;
+	display:					block;
+}
+
+.CA-menuitemHover {
+	background-color:			highlight;
+	color:						#ffffff;
+}
+
+.CA-menutxt {
+	width:						100%;
+}
+
+.CA-menutxtDisabled {
+	cursor:						default;
+}
+
+
+
+/* ------------------------------------------------------------------
+	Text editor
+   ------------------------------------------------------------------  */
+.TextForm {
+	font-size: 					9pt;
+	background : 				#F5F5F5;
+}
+
+.TextForm a.nav:link {
+	text-decoration: 			underline;
+	color:						#000000;
+}
+
+.TextForm a.nav:visited {
+	text-decoration: 			underline;
+	color:						#000000;
+}
+
+.TextForm a:link {
+	text-decoration: 			underline;
+}
+
+.TextForm a:visited {
+	text-decoration: 			underline;
+}
+
+.TextForm .bold {
+	font-weight: 				bold;
+}
+
+/* Toolbar area - Paragraph, font and color formatting */
+.TextForm .areaToolbar {
+	background: 				#DCDCDC;
+}
+
+/* Format buttons area */
+.TextForm .areafButtons {
+	background: 				#DCDCDC;
+}
+
+/*	Whole table over all areas */
+.TextForm .editMain {
+	border : 					1px solid #DCDCDC;
+}
+
+/* Area with "View HTML source"  and  "Clear Format "  */
+.TextForm .areaSwitchMode {
+}
+
+.TextForm .hidden {
+	visibility: 				hidden;
+}
+
+.TextForm .button {
+	border: 					1px solid black;
+}
+
+
+
+/* ------------------------------------------------------------------
+	Intranet
+   ------------------------------------------------------------------  */
+td.newsHeaderBar{
+	height:						21px;
+}
+
+p.forum_main{
+	padding:					0px;
+	margin:						0px;
+}
+
+td.blogg_header{
+	cursor:						pointer;
+	width:						100%;
+}
+
+td.blogg_properties{
+	padding-bottom:				8px;
+}
+
+td.forum_posts{
+	width:						100%;
+	text-align:					right;
+}
+
+table.forum_table{
+	border-collapse:			collapse;
+	margin-top:					10px;
+	width:						100%;
+}
+
+table.forum_header{
+	width:						100%;
+}
+
+td.forum_table_cell{
+	vertical-align:				top;
+}
+
+tr.forum_titlebar {
+	height:						20px;
+}
+
+.forum_posttitle{
+	border-bottom:				1px solid #bbbbbb;
+}
+
+.forum_postproperties{
+	text-align:					right;
+	border-bottom:				1px solid #bbbbbb;
+}
+
+.forum_postcontent{
+	width:						100%;
+}
+
+.scrollbox5 {
+	color:						#666666;
+	margin:						0px;
+	padding:					0px;
+	height: 					100px;
+	width: 						100%;
+	border: 					none;
+	overflow: 					auto;
+}
+
+.scrollbox6 {
+	height: 					150px;
+	width: 						100%;
+	border:						none;
+	overflow: 					auto;
+	background-color: 			#FFFFFF;
+}
+
+.scrollbox7 {
+	margin:						0px;
+	height: 					100%;
+	width: 						100%;
+	border: 					none;
+	overflow: 					auto;
+	background-color: 			#FFFFFF;
+	padding:					5px;
+}
+
+.styleForum {
+	cursor:						pointer;
+}
+
+.newsCollection1 {
+	color: 						#000000;
+	text-decoration: 			none;
+	cursor:						pointer;
+	padding:					2px;
+}
+
+.newsCollection2 {
+	color: 						#000000;
+	text-decoration: 			none;
+	cursor:						pointer;
+	padding:					2px;
+}
+
+
+
+/* ------------------------------------------------------------------
+	Customizer
+   ------------------------------------------------------------------  */
+.customizer {
+}
+
+.customizer.properties_text {
+	font-size:					8pt;
+	border-bottom: 				1px dotted #D3D3D3;
+	height:						25px;
+}
+
+.customizer.properties_header {
+	width:						320px;
+}
+
+
+
+/* ------------------------------------------------------------------
+	Report Designer (SQL portlet)
+   ------------------------------------------------------------------  */
+.joinHeadDiv {
+	width:						100%;
+}
+
+.reportdesigner.criteriarow {
+	background-color:			#E3E3E3;
+
+}
+
+.reportdesigner.criteriarow_highlighted {
+	background-color:			#B0C4DE;
+
+}
+
+.reportdesigner.criteriatable{
+	background-color:			#E3E3E3;
+	border:						#A3A3A3 1px solid;
+}
+
+.reportdesigner.columncell {
+	height:						30px;
+	padding-left:				2px;
+	width: 						115px;
+	white-space:				nowrap;
+}
+
+.reportdesigner.headcell {
+	height:						23px;
+	width: 						100%;
+	position: 					relative;
+}
+
+.reportdesigner.dropcell_highlighted {
+	height:						520px;
+	width: 						15px;
+	background-color: 			#B0C4DE;
+}
+
+.reportdesigner.moveimage {
+	position:					relative;
+	top:						0px;
+	left:						0px;
+}
+
+.reportdesigner.columnheader {
+	width:						100%;
+	height:						100%;
+	padding-top:				2px;
+}
+
+.reportdesigner.windowheader {
+	background:					url('images/backgrounds/flextablebar.gif');
+	color:						white;
+}
+
+.joinCell {
+	width:						100%;
+}
+
+.joinHeadDiv {
+	width:						100%;
+	background-color:			#65629D;
+	color:						white;
+}
+
+.joinTable {
+	width:						100%;
+}
+
+.joinCellDiv {
+	width:						100%;
+	border:						#A3A3A3 1px solid;
+	background-color:			#E3E3E3;
+}
+
+.joinRow {
+	border:						#A3A3A3 1px solid;
+}
+
+.nodetitle_normal {
+	font-style:					normal;
+	font-weight:				normal;
+}
+
+.nodetitle_highlighted {
+	font-style:					italic;
+	font-weight:				600;
+}
+
+.mltqryworkfield {
+	font-family: 				arial;
+	font-size: 					11px;
+}
+
+/* ------------------------------------------------------------------
+	Filter
+   ------------------------------------------------------------------  */
+.filter {
+	font-family: 				Arial;
+}
+
+.filter.filterfield {
+	padding:					1px;
+	width:						70px;
+	font-size:					8pt;
+	border:						2px outset buttonhighlight;
+	overflow-x:					hidden;
+}
+
+.filter.dmfield {
+	background-color:			#D3D3D3;
+	color:						black;
+	margin-bottom:				8px;
+}
+
+.filter.orderbyfield {
+	background-color:			#D3D3D3;
+	color:						black;
+	margin-bottom:				8px;
+}
+
+.filter.criteriafield {
+	background-color:			blue;
+	color:						white;
+}
+
+.filter.filterfield_focus {
+	width:						72px;
+	font-size:					8pt;
+	font-weight: 				bold;
+	border:						3px outset buttonhighlight;
+	overflow-x:					hidden;
+}
+
+.filter.filterfield_focus {
+	width:						100%;
+	overflow-x:					auto;
+}
+
+
+.criteriacell {
+	padding:					5px;
+	border-bottom: 				1px dotted #D3D3D3;
+	height:						30px;
+}
+
+
+
+/* ------------------------------------------------------------------
+	Error controls
+   ------------------------------------------------------------------  */
+
+.CA-errorTable {
+	width:						100%;
+}
+
+.CA-errorLink {
+	text-align:					right;
+	font-size:					8pt;
+	color:						blue;
+	text-decoration:			underline;
+	cursor:						hand;
+}
+
+.CA-errorContRow {
+	background-color:			#f7f7f7;
+}
+
+.CA-errorContCell {
+	background-color:			#f7f7f7;
+	border-bottom:				1px solid black;
+	vertical-align:				middle;
+}
+
+.CA-errorMessage {
+	cursor:						hand;
+	text-align:					left;
+	background-color:			#f7f7f7;
+	padding-left:				2px;
+	width:						100%;
+	padding-bottom:				2px;
+}
+
+.CA-errorChckBoxCell {
+	width:						20px;
+	vertical-align:				top;
+}
+
+.CA-errorCheckbox {
+}
+
+.CA-errorBar {
+	width:						100%;
+	height:						20px;
+	overflow-x:					hidden;
+	background-color:			red;
+	/*margin-top:					-2px;*/
+	/*border-bottom:				1px solid black;
+	border-left:				1px solid black;
+	border-right:				1px solid black;*/
+	/*background-image:			url('../images/errorbar.mid.png');*/
+
+}
+
+.CA-errorBarIcon {
+	width:						16px;
+	height:						16px;
+	background-image:			url('../images/icons/warning.gif');
+	vertical-align:				center;
+}
+
+.CA-errorBarMsg {
+	width:						100%;
+	height:						100%;
+	overflow-x:					hidden;
+	text-overflow:				ellipsis;
+	white-space:				nowrap;
+	cursor:						hand;
+	font-size:					16px;
+	color:						white;
+	/*background-image:			url('../images/errorbar.mid.png');*/
+	vertical-align:				center;
+	padding-left:				4px;
+}
+
+.CA-errorCursor:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------
+	Filebrowser
+   ------------------------------------------------------------------  */
+.CA-filebrowserHeader {
+	font-family: 				Arial;
+	font-size:					12pt;
+}
+
+.CA-filebrowserCaptionText {
+	font-weight:				bold;
+}
+
+.CA-filebrowserCell {
+	font-family: 				Arial;
+	font-size:					8pt;
+}
+
+
+
+/* ------------------------------------------------------------------
+	Tooltip
+   ------------------------------------------------------------------  */
+.CA-toolTipContainer{
+	background-color:			#fafafa;
+	border:						1px solid #aaaaaa;
+}
+
+.CA-toolTipTitle{
+	background-color:			#777777;
+	border-bottom:				1px solid #aaaaaa;
+	padding:					1px;
+	padding-right:				3px;
+	padding-left:				3px;
+	font-size:					12px;
+	font-weight:				bold;
+	color:						#ffffff;
+}
+
+.CA-toolTipContents{
+	padding:					2px;
+}
+
+.CA-toolTipData{
+}
+
+.CA-toolTipLabel{
+	color:						#3f5b77;
+	padding-right:				8px;
+}
+
+.CA-toolTipShadow{
+	background-image:			url('images/backgrounds/shadow.png');
+	background-repeat:			repeat;
+}
+
+/* ------------------------------------------------------------------
+	ServerSide FileChooser
+   ------------------------------------------------------------------  */
+.CA-SF-FileFolderContent {
+	background: white;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+	height: 150px;
+	width: 320px;
+	border: 1px solid gray;
+	overflow:auto;
+}
+
+.CA-SF-RootFolderSelectorContainer {
+	display: inline;
+}
+
+select.CA-SF-RootFolderSelect {
+	width: 250px;
+}
+
+input.CA-SF-SelectedFile {
+	width: 200px;
+}
+
+input.CA-SF-Button {
+	margin-left: 6px;
+}
+
+img.CA-SF-RootFolderIcon {
+	padding-left: 6px;
+	padding-top: 3px;
+	cursor: pointer;
+}
+
+.CA-SF-FolderRow {
+	font-weight: normal;
+}
+
+.CA-SF-FileRow {
+	margin-bottom: 2px;
+}
+
+img.CA-SF-FileDirIcon {
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+}
+
+span.CA-SF-FileDirText {
+	vertical-align: middle;
+	padding-left: 3px;
+}
+
+span.CA-SF-FileDirTextSelected {
+	font-weight: bold;
+}
+
+.CA-fSumFld {
+	border:						none;
+	border-top:					1px solid #b7babc;
+	border-right:				1px solid #b7babc;
+	height:						18px;
+}
+
+/* ------------------------------------------------------------------
+	Disable labels using Ajax
+   ------------------------------------------------------------------  */
+.disabledText {
+	color: #ACA899;
+	text-shadow: 1px 1px 1px #FFFFFF;
+	margin-right:				1px;
+	margin-bottom:				1px;
+	margin-right:				3px;
+	cursor:						default;
+}

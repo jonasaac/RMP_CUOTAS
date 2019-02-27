@@ -1,0 +1,287 @@
+@startuml
+hide methods
+hide circle
+
+!define PK(x) <u>x</u>
+
+''''''''''''''''''''''''
+' Definicion de Clases '
+''''''''''''''''''''''''
+'ex-resolcuion_derechos'
+class "licencias_pesca" as LIC
+'ex-resolcuion_cuotas'
+class "decretos_pesca" as DEC
+class "operaciones" as OP
+class "macro_zonas" as MZONA
+class "zonas_pesca" as ZONA
+class "operaciones_periodos" as OPPER
+class "periodos" as PER
+class "licencias_unidades" as LICUNI
+class "registro_cuotas" as RCUO
+'class "licencias_naves" as LICNAVE
+class "tipo_licencias" as TLIC
+class "periodos_unidades" as PERUNI
+class "numeraciones" as NUM
+class "estado_cuotas" as ESTC
+class "estado_cuotas_unidades" as ESTCUNI
+'''' RMP ''''
+class "descarga_encabezados" as DENC
+class "descarga_detalles" as DDET
+class "especies" as ESP
+class "unidades" as UNI
+class "auxiliares" as AUX
+class "naves" as NAVE
+
+class "tipo_operaciones" as TOP
+' Resoluciones de Derechos '
+class LIC {
+  PK(id) : int
+  tipo_licencia_id : int
+  **modifica_licencia_id : int**
+  codigo_resolucion : string
+  fecha_promulgacion : datetime
+  fecha_inicio_vigencia : datetime
+  fecha_termino_vigencia : datetime
+  auxiliar_id : int
+  especie_id : int
+  macro_zona_id : int
+  estado_id : int
+  adjunto : file
+  observaciones : text
+  creado : datetime
+  actualizado : datetime
+  usuario_uid : string
+  'PoDECentaje de la cuota total'
+  'coef_participacion : Unidades
+  'unidades_minimas_divisibles : Unidades
+  'unidad_minima_residual : Unidades
+  'en relacion cantidad de umd'
+  'Zona de pesca - Puede ser macrozona o region'
+}
+
+' Decretos '
+class DEC {
+  PK(id) : int
+  **codigo_resolucion** : string
+  fecha_promulgacion : datetime
+  fecha_inicio_vigencia : datetime
+  fecha_termino_vigencia : datetime
+  especie_id : int
+  estado_id : int
+  adjunto : file
+  observaciones : text
+  creado : datetime
+  actualizado : datetime
+  usuario_uid : string
+}
+
+' Registro Cuotas'
+class RCUO {
+    PK(id) : int
+    periodo_id : int
+    unidad_id : int
+    cantidad : float
+    creado : datetime
+    actualizado : datetime
+    usuario_uid : string
+}
+
+' Operaciones '
+class OP {
+  PK(id) : int
+  tipo_operacion_id : int
+  fecha_operacion : datetime
+  adjunto : file
+  observaciones : text
+  creado : datetime
+  actualizado : datetime
+  usuario_uid : string
+}
+
+' Periodos '
+class PER {
+  PK(id) : int
+  decreto_id : int
+  fecha_inicio : datetime
+  fecha_termino : datetime
+  macro_zona_id : int
+}
+
+' Operacions - Periodos '
+class OPPER {
+  PK(operacion_id) : int
+  PK(periodo_id) : int
+  unidad_id : int
+  cantidad : float
+}
+
+' Auxiliares '
+class AUX {
+  PK(id) : int
+  rut : string
+  funciones[] : array[bool]
+  ...
+}
+
+' Perdiodos - Unidades'
+class PERUNI {
+  PK(periodo_id) : int
+  PK(unidad_id) : int
+  cantidad : float
+}
+
+' Numeraciones '
+class NUM {
+  PK(id) : int
+  licencia_id : int
+  inicio : int
+  fin : int
+}
+
+' Unidades '
+class UNI {
+  PK(id) : int
+  nombre : string
+  abreviacion : string
+}
+
+' Especies '
+class ESP {
+  PK(id) : int
+  nombre : string
+  ...
+}
+
+' Macro Zonas '
+class MZONA {
+  PK(id) : int
+  nombre : string
+}
+
+' Zonas de Pesca '
+class ZONA {
+  PK(id) : int
+  macro_zona_id : int
+  nombre : string
+}
+
+' Resolucion de Derechos - Unidades'
+class LICUNI {
+  PK(licencia_id) : int
+  PK(unidad_id) : int
+  cantidad : float
+}
+
+' Tipo de Licencias '
+class TLIC {
+  PK(id) : int
+  nombre string
+  abreviacion : string
+}
+
+/' Resolucion de Derechos - Naves
+class LICNAVE {
+  PK(licencia_id) : int
+  PK(nave_id) : int
+  unidad_id : int
+  cantidad : float
+}'/
+
+' Naves '
+class NAVE {
+  PK(id) : int
+  nombre : string
+  **sindicato_id : int**
+  ...
+}
+
+class ESTC {
+  PK(id) : int
+  macro_zona_id : int
+  fecha_estado : datetime
+  especie_id : int
+  creado : datetime
+  actualizado : datetime
+  usuario_uid : string
+}
+
+class ESTCUNI {
+  PK(estado_cuota_id) : int
+  PK(unidad_id) : int
+  cantidad : float
+}
+
+' Tipo Operaciones '
+class TOP {
+  PK(id) : int
+  nombre : string
+}
+
+''''' RMP '''''
+class DENC {
+  PK(id) : int
+  ...
+}
+
+class DDET {
+  PK(id) : int
+  descarga_encabezado_id : int
+  zona_pesca_id : int
+  resolucion_cuota_id : int
+  ...
+}
+
+''''''''''''''''''''''''''''
+' Definicion de Relaciones '
+''''''''''''''''''''''''''''
+
+'LIC --* DEC
+LIC -- LIC
+LIC -u- TLIC
+LIC -r* NUM
+'LICNAVE *- LIC
+'LICNAVE *-u- NAVE
+LIC -* LICUNI
+LICUNI *-- UNI
+LIC -- ESP
+LIC -r AUX
+
+RCUO -- ESP
+RCUO -- PER
+RCUO -- UNI
+
+AUX - NAVE
+
+LIC -- MZONA
+MZONA --* ZONA
+MZONA - ESTC
+ESTC -- ESP
+ESTC --* ESTCUNI
+ESTCUNI *-- UNI
+
+DEC --* PER
+PER -- PERUNI
+PER -- MZONA
+PERUNI -r UNI
+ESP -- DEC
+
+' Operaciones '
+OP -r OPPER
+OPPER -u- PER
+OP -- TOP
+
+' Descargas '
+DENC --* DDET
+DDET -l ZONA
+DDET -r LIC
+
+'''''''''
+' Notas '
+'''''''''
+/'note top of DEC {
+  ¿Una resolución de cuotas
+  tiene un periodo de validez,
+  pero varios donde en los que
+  se aplica?
+}'/
+@enduml

@@ -1,0 +1,16 @@
+backup/
+tmp/
+logs/
+vendor/
+config/app.php
+vendor/
+*.bak
+DB.sql
+RMPCORONELv2b
+diagramas/*.png
+diagramas/*.svg
+ejemploOperaciones.xlsx
+consultas_posibles_vistas.sql
+.floo
+*.lock
+project.cson

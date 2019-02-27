@@ -1,0 +1,57 @@
+@startuml
+|Usuario|
+start
+: Ingresa al Sistema ;
+: Ingresa al Modulo de Cuotas ;
+: Selecciona Opción Nueva
+Resolucion de Cuota ;
+|Sistema|
+: Se despliega formulario
+de ingreso ;
+|Usuario|
+repeat
+split
+: Usuario Cancela el Formulario ;
+stop
+split again
+partition "Ingreso Datos" {
+: Ingresa el Codigo de Resolución <
+: Selecciona Periodo de Vigencia
+de la Resolución <
+: Selecciona la especie asociada
+a la Resolución<
+: Ingresa Cuota Global separada
+por Locación Geografica <
+: Selecciona Copia digital
+de Documento Oficial <
+}
+endsplit
+|Sistema|
+: Verifica validez de los datos ;
+repeat while (Los datos sean han\nvalidamente ingresados)
+: Permite enviar formulario
+para su guardado ;
+|Usuario|
+split
+: Usuario Cancela el Formulario ;
+stop
+split again
+: Envia petición de
+Guardado de datos ;
+endsplit
+|Sistema|
+: Verifica validez desde
+el lado del servidor ;
+if (Datos Validos) then (No)
+: Se envia mensaje indicando
+errores en el formulario >
+|Usuario|
+: Corrige Errores Reportados;
+stop
+else (Si)
+|Sistema|
+: Los datos son guardados
+en la base de datos ;
+: Se envia mensaje de confirmación >
+stop
+@enduml

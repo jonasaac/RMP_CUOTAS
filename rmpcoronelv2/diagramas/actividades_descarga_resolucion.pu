@@ -1,0 +1,63 @@
+@startuml
+
+|Usuario|
+start
+: Ingresa al Sistema ;
+: Ingresa al Modulo RMP ;
+: Selecciona Opción para Editar o
+Registrar un Documento de Descarga ;
+|Sistema|
+: Despliega el Formulario Asociado ;
+|Usuario|
+repeat
+split
+|Usuario|
+: Cancela el formulario ;
+stop
+split again
+partition "Ingreso Datos" {
+  |Usuario|
+  : Ingresa el datos asociados del
+  documento de descarga <
+  : Ingresa detalles del documento de
+  descarga <
+  |Sistema|
+  : Despliega opciones para resoluciones
+  dadas las restricciones de datos
+  ingresados previamente ;
+  |Usuario|
+  : Selecciona una de las resoluciones
+  disponibles dados las restricciones
+  previas <
+}
+end split
+|Sistema|
+: Verifica validez de los datos ;
+repeat while (Datos del formulario son validos)
+|Sistema|
+: Permite guardar los cambios del
+formulario ;
+split
+|Usuario|
+: Usuario Cancela el Formulario ;
+stop
+split again
+: Envia petición de
+Guardado de datos ;
+endsplit
+|Sistema|
+: Verifica validez desde
+el lado del servidor ;
+if (Datos Validos) then (No)
+: Se envia mensaje indicando
+errores en el formulario >
+|Usuario|
+: Corrige Errores Reportados;
+stop
+else (Si)
+|Sistema|
+: Los datos son guardados
+en la base de datos ;
+: Se envia mensaje de confirmación >
+stop
+@enduml
